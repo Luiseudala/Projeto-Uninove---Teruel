@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de curso</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form method="post" action="cadcur.jsp">
+        <p>
+           <label for="cod">Código:</label>
+           <input id="cod" type="text" name="codigo" size="6" maxlength="6" required>  
+        </p>
+        <p>
+            <label for="nom">Nome do curso:</label>
+            <input id="nom" type="text" name="nome" size="50" maxlength="50" required>  
+         </p>
+         <p>
+            <label for="dur">Duração:</label>
+            <input id="dur" type="text" name="duracao" size="15" maxlength="15">  
+         </p>
+         <p>
+            <label for="per">Período:</label>
+            <select id="per" name="periodo">
+                <option value="">Selecione</option>
+                <option value="Diurno">Manhã</option>
+                <option value="Noturno">Noite</option>                
+            </select>
+         </p>
+         <p>
+            <input type="submit" value="Salvar">
+         </p>                  
+    </form>
+</body>
+</html>
+
